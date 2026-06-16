@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ddff;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: purple;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    margin: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
