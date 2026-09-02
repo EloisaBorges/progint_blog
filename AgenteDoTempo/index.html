@@ -1,0 +1,111 @@
+```html
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>⏰ Agente do Tempo</h1>
+        <p>Informações e ferramentas para controlar suas datas</p>
+    </header>
+
+    <main>
+
+        
+        <section class="card">
+            <h2>Data e Hora</h2>
+
+            <div id="relogio" class="relogio">
+                00/00/0000 00:00:00
+            </div>
+
+            <div class="dados-data">
+                <p>Dia: <span id="dia">--</span></p>
+                <p>Mês: <span id="mes">--</span></p>
+                <p>Ano: <span id="ano">----</span></p>
+                <p>Hora: <span id="hora">--</span></p>
+                <p>Minutos: <span id="minutos">--</span></p>
+                <p>Segundos: <span id="segundos">--</span></p>
+                <p>Milissegundos: <span id="milissegundos">---</span></p>
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>Calculadora de Idade</h2>
+
+            <label for="nascimento">Digite sua data de nascimento:</label>
+            <input type="date" id="nascimento">
+
+            <button onclick="calcularIdade()">Calcular Idade</button>
+
+            <p id="resultadoIdade"></p>
+        </section>
+
+
+        <section class="card">
+            <h2>Próximo Aniversário</h2>
+
+            <label for="dataAniversario">Digite sua data de nascimento:</label>
+            <input type="date" id="dataAniversario">
+
+            <button onclick="proximoAniversario()">
+                Calcular próximo aniversário
+            </button>
+
+            <p id="resultadoAniversario"></p>
+        </section>
+
+
+
+        <section class="card">
+            <h2>Contagem Regressiva</h2>
+
+            <label for="dataContagem">Escolha uma data:</label>
+            <input type="datetime-local" id="dataContagem">
+
+            <button onclick="iniciarContagem()">
+                Iniciar Contagem
+            </button>
+
+            <div id="contador" class="contador">
+                00 dias 00:00:00
+            </div>
+        </section>
+
+
+     
+        <section class="card">
+            <h2>⭐ Datas Especiais</h2>
+
+            <ul>
+                <li>Ano Novo — 1º de janeiro</li>
+                <li>Dia dos Namorados — 12 de junho</li>
+                <li>Halloween — 31 de outubro</li>
+                <li>Natal — 25 de dezembro</li>
+            </ul>
+
+            <button onclick="mostrarDatasEspeciais()">
+                Ver próxima data especial
+            </button>
+
+            <p id="resultadoEspecial"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Agente do Tempo — Projeto de Programação para Internet</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
